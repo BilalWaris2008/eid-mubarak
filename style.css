@@ -6,3 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background: linear-gradient(#0b001a,#1a0b3b,#240046);
+    min-height: 220vh;
+    font-family: "Poppins";
+    overflow-x: hidden;
+}
+
