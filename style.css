@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white;
 }
 
 body {
@@ -11,6 +12,7 @@ body {
     min-height: 220vh;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
+    
 }
 
 .bg-stars {
@@ -55,4 +57,12 @@ body {
 .m2 {
     top: 90px;
     right: 120px;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
 }
