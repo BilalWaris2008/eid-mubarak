@@ -20,11 +20,39 @@ body {
     top: 0;
     left: 0;
     background-image:
-        radial-gradient(white 1px,transparent 1px),
-        radial-gradient(white 1px,transparent 1px),
-        radial-gradient(white 1px,transparent 1px),
-        radial-gradient(white 1px,transparent 1px);
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px),
+        radial-gradient(white 1px, transparent 1px);
     background-size: 80px 80px, 120px 120px, 150px 150px, 200px 200px;
     opacity: 0.4s;
     z-index: -1;
+}
+
+@keyframes moonfloat {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(15px);
+    }
+}
+
+.moons {
+    position: absolute;
+    font-size: 60px;
+    animation: moonfloat 4s ease-in-out infinite;
+}
+
+.m1 {
+    top: 90px;
+    left: 120px;
+}
+
+.m2 {
+    top: 90px;
+    right: 120px;
 }
