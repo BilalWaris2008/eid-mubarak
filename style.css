@@ -12,7 +12,7 @@ body {
     min-height: 220vh;
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
-    
+
 }
 
 .bg-stars {
@@ -27,7 +27,7 @@ body {
         radial-gradient(white 1px, transparent 1px),
         radial-gradient(white 1px, transparent 1px);
     background-size: 80px 80px, 120px 120px, 150px 150px, 200px 200px;
-    opacity: 0.4s;
+    opacity: 0.7;
     z-index: -1;
 }
 
@@ -35,34 +35,41 @@ body {
 
     0%,
     100% {
-        transform: translateY(0);
+        transform: translate(-50%, 0);
     }
 
     50% {
-        transform: translateY(15px);
+        transform: translate(-50%, 25px);
     }
 }
 
-.moons {
+.moon {
     position: absolute;
-    font-size: 60px;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 120px;
     animation: moonfloat 4s ease-in-out infinite;
+    text-shadow: 0 0 20px rgba(255, 255, 255, .4);
 }
 
-.m1 {
-    top: 90px;
-    left: 120px;
-}
 
-.m2 {
-    top: 90px;
-    right: 120px;
-}
-
-.main{
+.main {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
     height: 100vh;
+    margin-top: 3rem;
+}
+
+.main h1 {
+    font-size: 70px;
+    font-family: "Cinzel";
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(255, 255, 255, .4);
+}
+
+.main p {
+    font-size: 26px;
 }
