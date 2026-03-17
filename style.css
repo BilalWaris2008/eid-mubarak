@@ -8,7 +8,7 @@
 }
 
 body {
-    background: linear-gradient(#0b001a, #1a0b3b, #240046);
+    background: linear-gradient(135deg, #0b001a, #1a0b3b, #240046);
     min-height: 220vh;
     overflow-x: hidden;
 
@@ -113,7 +113,7 @@ body {
 }
 
 .wishes p {
-    font-size: 18px;
+    font-size: 17px;
     font-family: "Poppins";
     opacity: 0.9;
 }
@@ -145,3 +145,21 @@ body {
     transform: scale(1.2);
     color: white;
 }
+
+.footer{
+    background: rgba(0,0,0,.5);
+    text-align: center;
+    padding: 30px;
+    margin-top: 60px;
+}
+
+.footer p {
+    font-size: 17px;
+    font-family: "Poppins";
+}
+
+.footer strong {
+    color: #c77dff;
+}
+
+
