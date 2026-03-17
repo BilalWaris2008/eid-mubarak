@@ -17,8 +17,8 @@
 
 
 ::selection {
-    background: #c77dff;
-    color: #0b001a;
+    background: var(--main-color);
+    color: var(--bg-color);
 }
 
 body {
@@ -40,7 +40,7 @@ body {
         radial-gradient(white 1px, transparent 1px),
         radial-gradient(white 1px, transparent 1px);
     background-size: 120px 120px, 150px 150px, 200px 200px;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: -1;
 }
 
@@ -58,7 +58,7 @@ body {
 
 .moon {
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translateX(-50%);
     font-size: 120px;
@@ -77,15 +77,17 @@ body {
 }
 
 .main h1 {
+    padding: 0 2rem;
     font-size: 65px;
-    font-family: "Cinzel";
+    font-family: var(--heading-font);
     font-weight: 700;
     text-shadow: 0 0 20px rgba(255, 255, 255, .4);
 }
 
 .main p {
-    font-size: 26px;
-    font-family: "Playfair Display";
+    padding: 0 4rem;
+    font-size: 27px;
+    font-family: var(--secondary-font);
     margin-top: 1rem;
     opacity: 0.9;
 }
@@ -97,7 +99,7 @@ body {
 
 .about h2 {
     font-size: 35px;
-    font-family: "Cinzel";
+    font-family: var(--heading-font);
     font-weight: 700;
     text-shadow: 0 0 20px rgba(255, 255, 255, .4);
 }
@@ -105,7 +107,7 @@ body {
 .about p {
     font-size: 18px;
     padding: 0 4rem;
-    font-family: "Poppins";
+    font-family: var(--text-font);
     margin-top: 0.8rem;
     opacity: 0.85;
 }
@@ -116,19 +118,19 @@ body {
 
 .wishes h2 {
     font-size: 35px;
-    font-family: "Cinzel";
+    font-family: var(--heading-font);
     font-weight: 700;
     text-shadow: 0 0 20px rgba(255, 255, 255, .4);
 }
 
 .wishes h5 {
     font-size: 22px;
-    font-family: "Poppins";
+    font-family: var(--text-font);
 }
 
 .wishes p {
     font-size: 17px;
-    font-family: "Poppins";
+    font-family: var(--text-font);
     opacity: 0.85;
 }
 
@@ -169,9 +171,176 @@ body {
 
 .footer p {
     font-size: 17px;
-    font-family: "Poppins";
+    font-family: var(--text-font);
 }
 
 .footer strong {
     color: #c77dff;
+}
+
+@media (max-width: 992px) {
+
+    .wishes {
+        padding: 120px 20px;
+    }
+
+    .cards {
+        padding: 20px;
+    }
+
+    .about p {
+        padding: 0 2.5rem;
+    }
+
+    .main {
+        margin-top: 5rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .main h1 {
+        font-size: 55px;
+    }
+
+    .main p {
+        font-size: 23px;
+    }
+
+    .moon {
+        font-size: 100px;
+        top: 50px;
+    }
+
+    .wishes {
+        padding: 120px 50px;
+    }
+
+    .main {
+        margin-top: 4rem;
+    }
+}
+
+@media (max-width: 650px) {
+    .main h1 {
+        font-size: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .main h1 {
+        font-size: 42px;
+        flex-wrap: wrap;
+    }
+
+    .main p {
+        font-size: 21px;
+    }
+
+    .about p {
+        padding: 0 1rem;
+    }
+
+    .moon {
+        font-size: 90px;
+    }
+
+    .main {
+        margin-top: 2rem;
+    }
+
+    .icon {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .main h1 {
+        font-size: 38px;
+    }
+
+      .moon {
+        font-size: 80px;
+        top: 40px;
+    }
+
+    .main p {
+        font-size: 20px;
+        padding: 0 2rem;
+    }
+
+    .about h2 {
+        font-size: 32px;
+    }
+
+    .about p {
+        font-size: 16px;
+        padding: 0 0.5rem;
+    }
+
+    .wishes h2 {
+        font-size: 32px;
+    }
+
+    .wishes h5 {
+        font-size: 20px;
+    }
+
+    .wishes p {
+        font-size: 16px;
+    }
+
+    .footer p {
+        padding: 0 1.5rem;
+    }
+}
+
+@media (max-width: 333px) {
+    .main h1 {
+        font-size: 36px;
+    }
+
+    .moon {
+        font-size: 80px;
+        top: 40px;
+    }
+
+    .main p {
+        font-size: 18px;
+        padding: 0 1rem;
+    }
+
+    .about h2 {
+        font-size: 28px;
+    }
+
+    .about p {
+        font-size: 16px;
+        padding: 0 0.1rem;
+    }
+
+    .wishes h2 {
+        font-size: 25px;
+    }
+
+    .wishes h5 {
+        font-size: 17px;
+    }
+
+    .wishes p {
+        font-size: 15px;
+    }
+
+    .wishes {
+        padding: 120px 20px;
+    }
+
+    .icon {
+        font-size: 25px;
+    }
+
+    .footer p {
+        font-size: 16px;
+        padding: 0;
+    }
 }
