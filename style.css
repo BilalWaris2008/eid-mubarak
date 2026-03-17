@@ -82,7 +82,7 @@ body {
 }
 
 .about h2 {
-    font-size: 40px;
+    font-size: 35px;
     font-family: "Cinzel";
     font-weight: 700;
     text-shadow: 0 0 20px rgba(255, 255, 255, .4);
@@ -94,4 +94,54 @@ body {
     font-family: "Poppins";
     margin-top: 0.5rem;
     opacity: 0.9;
+}
+
+.wishes {
+    padding: 120px 60px;
+}
+
+.wishes h2 {
+    font-size: 35px;
+    font-family: "Cinzel";
+    font-weight: 700;
+    text-shadow: 0 0 20px rgba(255, 255, 255, .4);
+}
+
+.wishes h5 {
+    font-size: 22px;
+    font-family: "Poppins";
+}
+
+.wishes p {
+    font-size: 18px;
+    font-family: "Poppins";
+    opacity: 0.9;
+}
+
+.cards {
+    background: rgba(255, 255, 255, .06);
+    border: none;
+    border-radius: 15px;
+    backdrop-filter: blur(6px);
+    transition: 0.4s;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+.cards:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, .7);
+}
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #c77dff;
+    transition: 0.3s;
+}
+
+.cards:hover .icon {
+    transform: scale(1.2);
+    color: white;
 }
